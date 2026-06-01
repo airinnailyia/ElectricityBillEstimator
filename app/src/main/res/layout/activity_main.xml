@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F9FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- HEADER -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ Electricity Bill Estimator ⚡"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2563EB"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimate your monthly electricity bill easily"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#64748B"
+            android:layout_marginBottom="25dp" />
+
+        <!-- MONTH -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp" />
+
+        <!-- UNIT -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electricity Unit (kWh)"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/editTextUnit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter electricity unit"
+            android:inputType="number" />
+
+        <!-- REBATE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rebate (%)"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <Spinner
+            android:id="@+id/spinnerRebate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <!-- RESULT CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E0ECFF"
+            android:padding="16dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Charges : RM 0.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1E3A8A" />
+
+            <TextView
+                android:id="@+id/textViewFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Final Cost : RM 0.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1E3A8A"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <!-- BUTTONS -->
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:backgroundTint="#2563EB"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Save Record"
+            android:textAllCaps="false"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/buttonView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="View Records"
+            android:textAllCaps="false"
+            android:backgroundTint="#60A5FA"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/buttonAbout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="About"
+            android:textAllCaps="false"
+            android:backgroundTint="#93C5FD"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
