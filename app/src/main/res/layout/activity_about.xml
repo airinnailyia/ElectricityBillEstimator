@@ -107,9 +107,11 @@
             android:textSize="20sp"/>
 
         <TextView
+            android:id="@+id/githubLink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="https://github.com/airinnailyia/ElectricityBillEstimator"
+            android:autoLink="web"
             android:textColor="#2196F3"
             android:textSize="18sp"/>
 
